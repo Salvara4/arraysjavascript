@@ -143,14 +143,44 @@ function findName(name, arr){
   return target + " here"
 }
 
-
-
-
-
-
-
 // Advanced Functions
-// Create a function that returns an array with only the even elements from the array.
+// 8. Create a function that returns an array with only the even elements from the array.
+// Hint: use the % operator
+
+var numbers =[3,7,3,11,5,1]
+function evenElements(arr){
+  var newArray = []
+  arr.forEach(function(ele){
+    if ((ele % 2) === 0){
+      newArray.push(ele)
+    }
+  })
+  return newArray
+}
+
+
+// Create a function that returns an array with only the odd elements from the array.
+
+var numbers =[3,8,3,10,5,2]
+function oddElements(arr){
+  var newArray = []
+  arr.forEach(function(ele){
+    if ((ele % 2) != 0){
+      newArray.push(ele)
+    }
+  })
+  return newArray
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
